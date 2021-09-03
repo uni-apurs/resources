@@ -1,0 +1,115 @@
+8080 faculties
+8081 departments
+8082 syllabuses
+8083 depsyls
+8084 classrooms
+8085 courses
+8086 students
+8087 place
+8088 semester
+8089 professor
+8090 teachings
+8091 attendances
+
+> izgenerisati entity ispocetka
+> kreirati CreationDTO (bez id), DTO (sa id)
+> odrediti port za svaki servis
+> exportovati dto
+> instalirati dto tamo gde ce se koristiti
+> resttemplate, dto>model mapper
+> podesiti servise
+
+
+# dodati exceptione u create, update metode
+
+
+! promeniti collection u list
+! promeniti entity u dto
+
+
+### kreirati endpoint za svako obelezje
+### rest? jdbc? dto?
+### posstman za preostale endpointe
+### responseentity srediti za svaki ms
+### exceptione isto srediti
+
+https://github.com/uni-apurs
+https://drive.google.com/drive/u/4/folders/1ozUC6Qo07bjalm52IpmwYEBqnj8kBHIN
+
+
+https://start.spring.io/
+https://howtodoinjava.com/spring-boot2/resttemplate/spring-restful-client-resttemplate-example/
+https://www.baeldung.com/java-microservices-share-dto
+https://stackabuse.com/data-transfer-object-pattern-in-java-implementation-and-mapping
+https://github.com/vinsguru/vinsguru-blog-code-samples/tree/master/dto-share
+https://medium.com/analytics-vidhya/spring-boot-accessing-data-with-jpa-hibernate-and-postgresql-af68386363a4
+https://auth0.com/blog/automatically-mapping-dto-to-entity-on-spring-boot-apis/
+https://www.baeldung.com/hibernate-field-naming-spring-boot
+
+
+https://docs.oracle.com/javase/tutorial/deployment/jar/build.html
+https://spring.io/guides/gs/maven/
+https://maven.apache.org/plugins/maven-install-plugin/usage.html
+https://maven.apache.org/guides/mini/guide-3rd-party-jars-local.html
+
+# DTO MAVEN INSTALL
+
+# Faculties
+faculties-service\src\main\java\FacultyDTO.jar
+mvn install:install-file -Dfile=D:\Development\APURS\faculties-service\src\main\java\FacultyDTO.jar -DgroupId=org.uni-apurs -DartifactId=faculty-dto -Dversion=1.0.0 -Dpackaging=jar
+
+
+# Departments
+departments-service\src\main\java\DepartmentDTO.jar
+mvn install:install-file -Dfile=D:\Development\APURS\departments-service\src\main\java\DepartmentDTO.jar -DgroupId=org.uni-apurs -DartifactId=department-dto -Dversion=1.0.0 -Dpackaging=jar
+
+
+# Syllabuses
+syllabuses-service\src\main\java\SyllabusDTO.jar
+mvn install:install-file -Dfile=D:\Development\APURS\syllabuses-service\src\main\java\SyllabusDTO.jar -DgroupId=org.uni-apurs -DartifactId=syllabus-dto -Dversion=1.0.0 -Dpackaging=jar
+
+
+# Depsyls
+depsyls-service\src\main\java\DepsylDTO.jar
+mvn install:install-file -Dfile=D:\Development\APURS\depsyls-service\src\main\java\DepsylDTO.jar -DgroupId=org.uni-apurs -DartifactId=depsyl-dto -Dversion=1.0.0 -Dpackaging=jar
+
+
+# Classrooms
+classrooms-service\src\main\java\ClassroomDTO.jar
+mvn install:install-file -Dfile=D:\Development\APURS\classrooms-service\src\main\java\ClassroomDTO.jar -DgroupId=org.uni-apurs -DartifactId=classroom-dto -Dversion=1.0.0 -Dpackaging=jar
+
+
+# Places
+places-service\src\main\java\PlaceDTO.jar
+mvn install:install-file -Dfile=D:\Development\APURS\places-service\src\main\java\PlaceDTO.jar -DgroupId=org.uni-apurs -DartifactId=place-dto -Dversion=1.0.0 -Dpackaging=jar
+
+
+# Courses
+courses-service\src\main\java\CourseDTO.jar
+mvn install:install-file -Dfile=D:\Development\APURS\courses-service\src\main\java\CourseDTO.jar -DgroupId=org.uni-apurs -DartifactId=course-dto -Dversion=1.0.0 -Dpackaging=jar
+
+
+# Students
+students-service\src\main\java\StudentDTO.jar
+mvn install:install-file -Dfile=D:\Development\APURS\students-service\src\main\java\StudentDTO.jar -DgroupId=org.uni-apurs -DartifactId=student-dto -Dversion=1.0.0 -Dpackaging=jar
+
+
+# Professors
+professors-service\src\main\java\ProfessorDTO.jar
+mvn install:install-file -Dfile=D:\Development\APURS\professors-service\src\main\java\ProfessorDTO.jar -DgroupId=org.uni-apurs -DartifactId=professor-dto -Dversion=1.0.0 -Dpackaging=jar
+
+
+# Semesters
+semesters-service\src\main\java\SemesterDTO.jar
+mvn install:install-file -Dfile=D:\Development\APURS\semesters-service\src\main\java\SemesterDTO.jar -DgroupId=org.uni-apurs -DartifactId=semester-dto -Dversion=1.0.0 -Dpackaging=jar
+
+
+# Teaching
+teachings-service\src\main\java\TeachingDTO.jar
+mvn install:install-file -Dfile=D:\Development\APURS\teachings-service\src\main\java\TeachingDTO.jar -DgroupId=org.uni-apurs -DartifactId=teaching-dto -Dversion=1.0.0 -Dpackaging=jar
+
+
+# Attendances
+attendances-service\src\main\java\AttendanceDTO.jar
+mvn install:install-file -Dfile=D:\Development\APURS\attendances-service\src\main\java\AttendanceDTO.jar -DgroupId=org.uni-apurs -DartifactId=attendance-dto -Dversion=1.0.0 -Dpackaging=jar
+
